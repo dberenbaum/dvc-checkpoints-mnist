@@ -12,19 +12,19 @@ stages:
       size: 3580
     params:
       params.yaml:
-        lr: 1e-06
+        lr: 1e-05
         seed: 473987
         weight_decay: 0
     outs:
     - path: dvclive
-      md5: 93fd2fb4e6b3b76e3f8541f8c90479f3.dir
-      size: 284
+      md5: c11092099e888a8f12cec313f7d6bf79.dir
+      size: 345
       nfiles: 2
     - path: model.pt
-      md5: 47e9132db328c2386817a0b8ede146c5
+      md5: 006128587aaad97b24df16b1b83b004d
       size: 410751
     - path: predictions.json
-      md5: a3f4f59d622cf226439db3ef5e1436ac
+      md5: 9daa72a6d4c16a141d3f78ca3f866463
       size: 310000
   download:
     cmd: python download.py
