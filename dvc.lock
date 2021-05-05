@@ -21,7 +21,7 @@ stages:
       size: 284
       nfiles: 2
     - path: model.pt
-      md5: 55a51d9bd5b91e44cebf8ea535e6fd88
+      md5: 47e9132db328c2386817a0b8ede146c5
       size: 410751
     - path: predictions.json
       md5: a3f4f59d622cf226439db3ef5e1436ac
