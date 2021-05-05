@@ -17,14 +17,14 @@ stages:
         weight_decay: 0
     outs:
     - path: dvclive
-      md5: 26654a4a4fb7a6f0734474b824db26c4.dir
-      size: 406
+      md5: 50874838add5577e20b6bf63e8eedf24.dir
+      size: 467
       nfiles: 2
     - path: model.pt
-      md5: 4e9977ba917854b01a19322c92d46211
+      md5: a57c2f02ae8309cac9332a5896aa4031
       size: 410751
     - path: predictions.json
-      md5: ed363d53aac868de484ba377eee9b5d7
+      md5: ca56f3224d5945042039d6a3971f0929
       size: 310000
   download:
     cmd: python download.py
