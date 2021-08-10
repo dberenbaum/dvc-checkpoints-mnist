@@ -8,9 +8,9 @@ stages:
       size: 3075
     outs:
     - path: model.pt
-      md5: 8841bdaba25e99669db80d157bbc224c
+      md5: e45a2cad7a231429953db39f4c44c573
       size: 410751
     - path: testing123
-      md5: 04bca50084cf9ed6ff545df9bef0c473.dir
-      size: 188
+      md5: f0acede4b6deb0dc4f0c1bac2af45fa3.dir
+      size: 212
       nfiles: 1
