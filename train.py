@@ -6,6 +6,7 @@ import torch
 import torch.nn.functional as F
 import torchvision
 import dvclive
+import numpy as np
 
 
 EPOCHS = 10
@@ -100,7 +101,7 @@ def main():
             # Evaluate and checkpoint.
             metrics = evaluate(model, x_test, y_test)
             for metric, value in metrics.items():
-                dvclive.log(metric, value)
+                dvclive.log(metric, np.float(value))
             dvclive.next_step()
     except KeyboardInterrupt:
         pass
