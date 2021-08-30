@@ -1,0 +1,11 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: train.py
+      md5: 34803fd28d3381c7bf111f5ccf3ff46c
+      size: 3075
+    outs:
+    - path: dvclive
+    - path: model.pt
