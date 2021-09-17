@@ -102,6 +102,7 @@ def main():
             metrics = evaluate(model, x_test, y_test)
             for metric, value in metrics.items():
                 aim.track(value, name=metric, epoch=dvclive.get_step())
+                aim.flush()
                 dvclive.log(metric, value)
             dvclive.next_step()
     except KeyboardInterrupt:
