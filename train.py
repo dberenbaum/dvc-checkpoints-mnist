@@ -6,6 +6,7 @@ import torch
 import torch.nn.functional as F
 import torchvision
 import dvclive
+import aim
 
 
 EPOCHS = 10
@@ -100,6 +101,7 @@ def main():
             # Evaluate and checkpoint.
             metrics = evaluate(model, x_test, y_test)
             for metric, value in metrics.items():
+                aim.track(value, name=metric, epoch=dvclive.get_step())
                 dvclive.log(metric, value)
             dvclive.next_step()
     except KeyboardInterrupt:

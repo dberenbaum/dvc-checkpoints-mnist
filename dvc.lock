@@ -4,13 +4,13 @@ stages:
     cmd: python train.py
     deps:
     - path: train.py
-      md5: 34803fd28d3381c7bf111f5ccf3ff46c
-      size: 3075
+      md5: eac772aa2c42f2f285c106274b12b95b
+      size: 3158
     outs:
     - path: dvclive
-      md5: 861c233aa677355b597002edffb9ec94.dir
-      size: 68
+      md5: d600d4b89a6155d0d134b2565e76a9ff.dir
+      size: 92
       nfiles: 1
     - path: model.pt
-      md5: b0292337a5fc653b1983435c52fbd8b7
+      md5: 6e13844ee16088e972a08361c6a0716f
       size: 410751
