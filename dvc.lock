@@ -8,9 +8,9 @@ stages:
       size: 3186
     outs:
     - path: dvclive
-      md5: 2e3d317807dce2940d1dc568956301a6.dir
-      size: 458
+      md5: fe31f24fe1ebf2f453cbc39b300b62c5.dir
+      size: 483
       nfiles: 1
     - path: model.pt
-      md5: d44242506531570daf53109437d6bcd8
+      md5: f199630a4363c386a4841ca334ef5dfd
       size: 410751
