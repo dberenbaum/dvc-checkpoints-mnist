@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 import torchvision
 import dvclive
-import aim
+import mlflow
 
 
 EPOCHS = 10
@@ -100,11 +100,11 @@ def main():
             torch.save(model.state_dict(), "model.pt")
             # Evaluate and checkpoint.
             metrics = evaluate(model, x_test, y_test)
-            for metric, value in metrics.items():
-                aim.track(value, name=metric, epoch=dvclive.get_step())
-                aim.flush()
-                dvclive.log(metric, value)
-            dvclive.next_step()
+            with mlflow.start_run():
+                for metric, value in metrics.items():
+                    dvclive.log(metric, value)
+                    mlflow.log_metric(metric, value)
+                dvclive.next_step()
     except KeyboardInterrupt:
         pass
 
